@@ -1,6 +1,21 @@
+/**
+ * Fecha
+ *
+ * @property dia
+ * @property mes
+ * @property a
+ * @constructor Create empty Fecha
+ * @author Rafael Becerra Guerra
+ */
 class Fecha(private val dia: Int, private val mes: Int, private val a: Int) {
 
 
+    /**
+     * Valida
+     *
+     * @return Boolean
+     *
+     */
     fun valida(): Boolean {
 
         if (dia < 1 || dia > 31) return false
@@ -10,6 +25,12 @@ class Fecha(private val dia: Int, private val mes: Int, private val a: Int) {
         return DiasMes()
     } // … más métodos
 
+    /**
+     * Dias mes
+     *
+     * @return Boolen
+     *
+     */
     private fun DiasMes(): Boolean {
         var diasMes = 0
         when (mes) {
