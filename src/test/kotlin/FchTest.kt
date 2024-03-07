@@ -1,10 +1,8 @@
 import org.junit.jupiter.api.AfterEach
-import org.junit.jupiter.api.Assertions.assertEquals
-import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
-import kotlin.test.assertFalse
-import kotlin.test.assertTrue
+
+import org.junit.jupiter.api.Assertions.*
 
 class FchTest {
 
@@ -22,7 +20,6 @@ class FchTest {
         assertTrue (fecha.valida())
     }
 
-
     @Test
     fun fechaInvalidaDia() {
         val fecha = Fch(32, 5, 2022)
@@ -32,7 +29,7 @@ class FchTest {
     @Test
     fun fechaInvalidaMes() {
         val fecha = Fch(12, 13, 2021)
-       // Assert.assertFalse(fecha.valida())
+        // Assert.assertFalse(fecha.valida())
         assertFalse (fecha.valida())
     }
 
@@ -51,8 +48,4 @@ class FchTest {
         println("Fecha valida Bisiesto")
         println(fecha.valida())
     }
-
-
-
-
 }
