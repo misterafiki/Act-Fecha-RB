@@ -16,7 +16,7 @@ class FechaTest {
 
     @Test
     fun valida() {
-        val fecha = Fecha(15, 13, 2023)
+        val fecha = Fecha(15, 12, 2023)
         assertTrue (fecha.valida())
     }
 
